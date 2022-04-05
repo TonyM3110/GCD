@@ -28,6 +28,35 @@ class SecondVC: UIViewController {
         super.viewDidLoad()
         
         fetchImage()
+        
+        delay(3) {
+            self.loginAlert()
+        }
+    }
+    
+    fileprivate func delay(_ delay: Int, closure: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(delay)) {
+            closure()
+        }
+    }
+    
+    fileprivate func loginAlert() {
+        let alert = UIAlertController(title: "Register?", message: "Put your loging and pass", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        alert.addTextField { (usernameTF) in
+            usernameTF.placeholder = "Put your login"
+        }
+        
+        alert.addTextField { (passTF) in
+            passTF.placeholder = "Put your pass"
+            passTF.isSecureTextEntry = true
+        }
+        self.present(alert, animated: true)
+
     }
     
     fileprivate func fetchImage() {
