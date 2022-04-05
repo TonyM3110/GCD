@@ -27,6 +27,7 @@
 		6B63968F27FBC0C500266D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B63969527FBC21D00266D3A /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		6B63969927FBD16800266D3A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6B63969A27FBD5B700266D3A /* DispatchItem.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DispatchItem.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				6B63968327FBC0C200266D3A /* SceneDelegate.swift */,
 				6B63968527FBC0C200266D3A /* ViewController.swift */,
 				6B63969527FBC21D00266D3A /* SecondVC.swift */,
+				6B63969A27FBD5B700266D3A /* DispatchItem.playground */,
 				6B63969927FBD16800266D3A /* MyPlayground.playground */,
 				6B63968727FBC0C200266D3A /* Main.storyboard */,
 				6B63968A27FBC0C400266D3A /* Assets.xcassets */,
